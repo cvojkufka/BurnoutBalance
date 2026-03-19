@@ -53,6 +53,7 @@ defineEmits(['navigate'])
 
   width: 60px;  /* adjust size */
   height: 60px;
+  z-index: 20;
 }
 
 .logo img {
@@ -69,5 +70,6 @@ defineEmits(['navigate'])
   display: flex;
   flex-direction: column;
   gap: 12px;
+  z-index: 20;
 }
 </style>
