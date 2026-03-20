@@ -1,10 +1,12 @@
 <template>
   <div class="app-container">
-    <!-- app -->
     <Sidebar v-if="currentPage !== 'home'" @navigate="currentPage = $event" />
 
     <Home v-if="currentPage === 'home'" @navigate="currentPage = $event" />
-    <Track v-if="currentPage === 'track'" />
+    <Track v-if="currentPage === 'track'" @navigate="currentPage = $event" />
+    <Workload v-if="currentPage === 'workload'" @navigate="currentPage = $event" />
+    <Mental v-if="currentPage === 'mental'" @navigate="currentPage = $event" />
+    <Calculate v-if="currentPage === 'calculate'" @navigate="currentPage = $event" />
     <Plan v-if="currentPage === 'plan'" />
     <Reflect v-if="currentPage === 'reflect'" />
   </div>
@@ -13,6 +15,9 @@
 <script setup>
 import { ref } from 'vue'
 
+import Calculate from './components/pages/Calculate.vue'
+import Mental from './components/pages/Mental.vue'
+import Workload from './components/pages/Workload.vue'
 import Sidebar from './components/Sidebar.vue'
 import Home from './components/pages/Home.vue'
 import Track from './components/pages/Energy.vue'
