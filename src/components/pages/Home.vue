@@ -1,8 +1,8 @@
 <template>
   <div class="home">
     <div class="headers">
-      <h1>Burnout</h1>
-      <h1>Balance</h1>
+      <h1 style="color: #58b1ed;">Burnout</h1>
+      <h1 style="color: #346bc9;">Balance</h1>
 
       <div class="logo">
         <img :src="homeMeter" alt="homeLogo" />

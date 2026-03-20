@@ -170,7 +170,7 @@ function saveNote() {
   font-size: 13px;
   border: 1px solid black;
   border-radius: 8px;
-  background: white;
+  background: rgb(91, 148, 235);
   cursor: pointer;
 }
 

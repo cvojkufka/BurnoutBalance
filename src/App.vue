@@ -15,7 +15,7 @@ import { ref } from 'vue'
 
 import Sidebar from './components/Sidebar.vue'
 import Home from './components/pages/Home.vue'
-import Track from './components/pages/Track.vue'
+import Track from './components/pages/Energy.vue'
 import Plan from './components/pages/Plan.vue'
 import Reflect from './components/pages/Reflect.vue'
 
@@ -24,15 +24,15 @@ const currentPage = ref('home')
 
 <style>
 .app-container {
-  width: 375px;   /* phone width */
-  height: 667px;  /* phone height */
+  width: 375px;
+  height: 667px;
 
-  margin: auto;   /* center on screen */
+  margin: auto;
 
   border: 2px solid black;
   border-radius: 20px;
 
-  overflow: hidden;
+  overflow-y: auto;
 
   position: relative;
   background: white;
